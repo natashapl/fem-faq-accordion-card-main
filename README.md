@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ Accordion Card built with Pure CSS
 
-This is my solution to the ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg).
+This is my solution to the Frontend Mentor FAQ accordion card coding challenge![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg).
 
 ## Table of contents
 
