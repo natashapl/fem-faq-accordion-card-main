@@ -86,22 +86,22 @@ article .contentWrapper {
   width: 350px;
   margin-left: auto;
 }
-article h3 {
+article h2 {
   font-size: 14px;
   font-weight: 400;
   color: hsl(237deg, 12%, 33%);
   margin: 0;
 }
-article h3:hover {
+article h2:hover {
   color: hsl(14deg, 88%, 65%);
 }
-article h3 label {
+article h2 label {
   cursor: pointer;
   width: 100%;
   display: block;
   padding: 0 0 18px;
 }
-article h3 label::after {
+article h2 label::after {
   content: "";
   background: url(../images/icon-arrow-down.svg) no-repeat right 0;
   width: 12px;
@@ -148,13 +148,13 @@ article input:checked ~ .answer {
   height: auto;
   margin: 0 0 18px;
 }
-article input:checked ~ h3 {
+article input:checked ~ h2 {
   font-weight: 700;
 }
-article input:checked ~ h3 label {
+article input:checked ~ h2 label {
   padding: 0 0 10px;
 }
-article input:checked ~ h3 label::after {
+article input:checked ~ h2 label::after {
   transform: scaleY(-1);
 }
 
@@ -229,20 +229,20 @@ footer a {
   article::before {
     display: none;
   }
-  article h3 {
+  article h2 {
     font-size: 13px;
   }
-  article h3:hover {
+  article h2:hover {
     color: hsl(237deg, 12%, 33%);
   }
-  article h3 label::after {
+  article h2 label::after {
     margin: 6px 0 0;
   }
   article .contentWrapper {
     width: 100%;
     margin-left: 0;
   }
-  article input:active ~ h3 {
+  article input:active ~ h2 {
     color: hsl(14deg, 88%, 65%);
   }
 }

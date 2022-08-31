@@ -92,7 +92,7 @@ article {
         margin-left: auto;
     }
 
-    h3 {
+    h2 {
         font-size: 14px;
         font-weight: 400;
         color: hsl(237, 12%, 33%);
@@ -166,7 +166,7 @@ article {
         margin: 0 0 18px;
     }
 
-    input:checked ~ h3 {
+    input:checked ~ h2 {
         font-weight: 700;
         
 
@@ -271,7 +271,7 @@ footer {
             display: none;
         }
 
-        h3 {
+        h2 {
             font-size: 13px;
 
             &:hover {
@@ -290,7 +290,7 @@ footer {
             margin-left: 0;
         }
 
-        input:active ~ h3 {
+        input:active ~ h2 {
             color: hsl(14, 88%, 65%);
         }
     }
