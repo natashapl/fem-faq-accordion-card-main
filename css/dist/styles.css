@@ -205,10 +205,8 @@ footer a {
   article .contentWrapper {
     width: 280px;
   }
-}
-@media screen and (max-width: 1000px) {
-  article .contentWrapper {
-    width: 260px;
+  article h2 label::after {
+    margin: 6px 0 0 0;
   }
 }
 @media screen and (max-width: 991px) {
