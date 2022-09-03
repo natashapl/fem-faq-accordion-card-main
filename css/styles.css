@@ -31,7 +31,7 @@ h1 {
   margin: 0 0 37px;
 }
 
-#root {
+.root {
   width: 100%;
   min-width: 375px;
   min-height: 100vh;
@@ -59,8 +59,32 @@ main::before {
   width: 190px;
   height: 200px;
   z-index: 10;
+  -webkit-animation: bounce 0.5s;
+          animation: bounce 0.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+          animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
+@keyframes bounce {
+  from {
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    transform: translate3d(0, 10px, 0);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    transform: translate3d(0, 10px, 0);
+  }
+}
 article {
   background: white url(../images/bg-pattern-desktop.svg) no-repeat -580px -294px;
   border-radius: 25px;
@@ -170,7 +194,7 @@ footer a {
 }
 
 @media screen and (min-height: 768px) and (min-width: 1440px) {
-  #root {
+  .root {
     padding: 8.125rem 0 4rem;
   }
 }
@@ -194,7 +218,7 @@ footer a {
     text-align: center;
     margin: 0 0 32px;
   }
-  #root {
+  .root {
     padding: 3rem 0;
   }
   main {
@@ -208,6 +232,8 @@ footer a {
     width: 239px;
     height: 182px;
     z-index: 10;
+    -webkit-animation: none;
+            animation: none;
   }
   main::after {
     content: "";
